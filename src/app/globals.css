@@ -125,6 +125,14 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-name {
+    @apply bg-gradient-to-r from-black via-gray-500 to-white bg-clip-text text-transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+    text-stroke: 1px rgba(0, 0, 0, 0.3);
   }
 }
