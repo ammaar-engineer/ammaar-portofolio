@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
 
         {/* Role Badge */}
-        <Badge className="rounded-full bg-white text-black text-sm px-4 py-2 font-medium hover:bg-white/90 shadow-sm">
+        <Badge className="rounded-[2px] bg-black text-white text-sm px-4 py-4 font-medium hover:bg-black/90 shadow-sm">
           Backend Developer
         </Badge>
 

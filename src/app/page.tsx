@@ -1,9 +1,9 @@
 import Navbar from "@/components/navbar";
-import Hero from "@/components/sections/hero";
-import Knowledge from "@/components/sections/knowledge";
-import Projects from "@/components/sections/projects";
-import Experience from "@/components/sections/experience";
-import Profile from "@/components/sections/profile";
+import Hero from "@/sections/hero/page";
+import Knowledge from "@/sections/knowledge/page";
+import Projects from "@/sections/projects/page";
+import Experience from "@/sections/experience/page";
+import Profile from "@/sections/profile/page";
 
 export default function Home() {
   return (
