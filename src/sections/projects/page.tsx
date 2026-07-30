@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <section className="w-full px-4 py-20">
       <div className="container mx-auto max-w-6xl space-y-8">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Projects</h2>
+        <h2 className="text-xl font-bold tracking-tight md:text-2xl">Projects</h2>
 
         <Tabs defaultValue="development" className="w-full">
           <TabsList className="rounded-none">

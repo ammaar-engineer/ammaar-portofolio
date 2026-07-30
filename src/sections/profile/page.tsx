@@ -10,7 +10,7 @@ export default function Profile() {
   return (
     <section className="w-full px-4 py-20">
       <div className="container mx-auto max-w-6xl space-y-8">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">My Profile</h2>
+        <h2 className="text-xl font-bold tracking-tight md:text-2xl">My Profile</h2>
 
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="rounded-none" asChild>

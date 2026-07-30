@@ -1,3 +1,5 @@
+# Struktur projek nya secara mendasar
+___
 Struktur projek
 ├── state
 ├── app
@@ -11,3 +13,7 @@ Struktur projek
         ├── state
         ├── components
         └── page.tsx
+
+# Rule pembuatan projek dengan struktur ini
+- Patokan struktur sistem selalu pada struktur tersebut
+- Buat file atau folder yang memang benar-benar dibutuhkan 

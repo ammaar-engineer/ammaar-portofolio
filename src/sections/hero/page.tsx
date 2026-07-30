@@ -15,9 +15,9 @@ export default function Hero() {
     <section className="flex min-h-screen w-full flex-col items-center justify-center px-4 py-20">
       <div className="flex max-w-7xl flex-col items-center gap-8 text-center">
         {/* Name with Gradient */}
-        <h1 className="text-6xl font-bold leading-tight tracking-tight sm:text-7xl md:text-8xl lg:text-9xl">
+        <h1 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
           <span className="gradient-name">
-            Mochammad Ammmaar Fauzaan
+            MOCHAMMAD AMMAAR FAUZAAN
           </span>
         </h1>
 

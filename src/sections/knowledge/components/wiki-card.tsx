@@ -6,7 +6,7 @@ export default function WikiCard({ title, description }: Omit<Wiki, "id">) {
     <Card className="rounded-none shadow-sm">
       <CardHeader>
         <CardTitle className="text-base">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className="text-[10px]">{description}</CardDescription>
       </CardHeader>
     </Card>
   );

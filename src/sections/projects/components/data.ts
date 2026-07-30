@@ -4,8 +4,8 @@ export const projects: Project[] = [
   // Development
   {
     id: "1",
-    title: "E-Commerce API",
-    description: "RESTful API for e-commerce platform with payment integration and order management.",
+    title: "RacerFS",
+    description: "SaaS project that aims to help setup things via the terminal",
     githubUrl: "https://github.com/ammaar-engineer/ecommerce-api",
     category: "development",
   },

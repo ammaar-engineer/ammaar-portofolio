@@ -12,7 +12,7 @@ export default function Knowledge() {
         <Separator />
 
         <div className="space-y-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Knowledge Base</h2>
+          <h2 className="text-xl font-bold tracking-tight md:text-2xl">Knowledge Base</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {wikiItems.map((wiki) => (
               <WikiCard key={wiki.id} title={wiki.title} description={wiki.description} />

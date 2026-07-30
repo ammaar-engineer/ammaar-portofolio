@@ -1,5 +1,3 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import type { Wiki } from "@/types";
 
 const techStack = [
@@ -16,7 +14,7 @@ const techStack = [
 const wikiItems: Wiki[] = [
   {
     id: "1",
-    title: "REST API Best Practices",
+    title: "REST API Practices",
     description: "Guidelines for building scalable REST APIs with proper HTTP methods and status codes.",
   },
   {
