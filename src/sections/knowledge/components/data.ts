@@ -9,6 +9,9 @@ const techStack = [
   "Tailwind",
   "MariaDB",
   "Redis",
+  "MongoDB",
+  "Docker",
+  "Linux",
 ];
 
 const wikiItems: Wiki[] = [

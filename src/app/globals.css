@@ -132,7 +132,18 @@
 @layer utilities {
   .gradient-name {
     @apply bg-gradient-to-r from-black via-gray-500 to-white bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: gradient-shift 3s ease-in-out infinite;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
     text-stroke: 1px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
   }
 }

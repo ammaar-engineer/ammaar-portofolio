@@ -1,3 +1,4 @@
+import ShapeGrid from "@/components/ShapeGrid";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -31,7 +32,26 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", pixelFont.className)}
     >
       <body className="min-h-full flex flex-col">
-        <TooltipProvider>{children}</TooltipProvider>
+          <div className="fixed w-screen h-screen z-0">
+            <ShapeGrid 
+              speed={0.5}
+              squareSize={40}
+              direction='diagonal' // up, down, left, right, diagonal
+              borderColor="#00000029"
+              hoverFillColor='#4c4a4a'
+              shape='square' // square, hexagon, circle, triangle
+              hoverTrailAmount={0} // number of trailing hovered shapes (0 = no trail)
+              direction="down"
+              hoverColor="#222222"
+              size={40}
+              shape="square"
+            />
+          </div>
+        <TooltipProvider>
+          <div className="z-4">
+            {children}
+          </div>
+        </TooltipProvider>
       </body>
     </html>
   );

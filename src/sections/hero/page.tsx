@@ -2,6 +2,7 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { motion } from 'motion/react';
 
 export default function Hero() {
   const handleContactClick = () => {
@@ -16,24 +17,41 @@ export default function Hero() {
       <div className="flex max-w-7xl flex-col items-center gap-8 text-center">
         {/* Name with Gradient */}
         <h1 className="text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
-          <span className="gradient-name">
+          <motion.span
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: 'easeIn' }}
+            className="gradient-name inline-block"
+          >
             MOCHAMMAD AMMAAR FAUZAAN
-          </span>
+          </motion.span>
         </h1>
 
         {/* Role Badge */}
-        <Badge className="rounded-[2px] bg-black text-white text-sm px-4 py-4 font-medium hover:bg-black/90 shadow-sm">
-          Backend Developer
-        </Badge>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
+        >
+          <Badge className="rounded-[2px] bg-black text-white text-sm px-4 py-4 font-medium hover:bg-black/90 shadow-md">
+            Backend Developer
+          </Badge>
+        </motion.div>
 
         {/* Contact Button */}
-        <Button
-          size="lg"
-          className="mt-4 rounded-none"
-          onClick={handleContactClick}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
         >
-          Contact Me
-        </Button>
+          <Button
+            size="lg"
+            className="mt-4 rounded-none"
+            onClick={handleContactClick}
+          >
+            Contact Me
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

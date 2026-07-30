@@ -6,14 +6,14 @@ export const projects: Project[] = [
     id: "1",
     title: "RacerFS",
     description: "SaaS project that aims to help setup things via the terminal",
-    githubUrl: "https://github.com/ammaar-engineer/ecommerce-api",
+    githubUrl: "https://github.com/ammaar-engineer/RacerFS",
     category: "development",
   },
   {
     id: "2",
-    title: "Authentication Service",
-    description: "Microservice for user authentication with JWT and refresh tokens.",
-    githubUrl: "https://github.com/ammaar-engineer/auth-service",
+    title: "Ev-Express",
+    description: "Small absctraction on top of express to boost my workflow",
+    githubUrl: "https://github.com/ammaar-engineer/Ev-Express",
     category: "development",
   },
   {
