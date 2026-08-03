@@ -18,31 +18,17 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Task Management System",
-    description: "Backend system for task tracking with real-time updates using WebSocket.",
-    githubUrl: "https://github.com/ammaar-engineer/task-system",
+    title: "RacerSR",
+    description: "Connect AI like 9router and Manage them like using obsidian ",
+    githubUrl: "https://github.com/ammaar-engineer/RacerSR",
     category: "development",
   },
   // Production
   {
     id: "4",
-    title: "Company Landing Page",
-    description: "High-performance landing page with SSR and SEO optimization.",
-    githubUrl: "https://github.com/ammaar-engineer/company-landing",
-    category: "production",
-  },
-  {
-    id: "5",
-    title: "Blog Platform",
-    description: "Full-stack blog platform with CMS and markdown support.",
-    githubUrl: "https://github.com/ammaar-engineer/blog-platform",
-    category: "production",
-  },
-  {
-    id: "6",
-    title: "Analytics Dashboard",
-    description: "Real-time analytics dashboard for monitoring application metrics.",
-    githubUrl: "https://github.com/ammaar-engineer/analytics-dashboard",
-    category: "production",
+    title: "RacerEX-F",
+    description: "Small framework with expressjs library to make setup ExpressJS more fast ",
+    githubUrl: "https://github.com/ammaar-engineer/RacerEX-F",
+    category: "development",
   },
 ];
