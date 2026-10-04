@@ -23,12 +23,19 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/ammaar-engineer/RacerSR",
     category: "development",
   },
+  {
+    "id": "4",
+    "title": "AgenticKanban",
+    "description": "A kanban board that is based on agentic",
+    "githubUrl": "https://github.com/ammaar-engineer/AgenticKanban",
+    "category": "development",
+  },
   // Production
   {
-    id: "4",
-    title: "RacerEX-F",
-    description: "Small framework with expressjs library to make setup ExpressJS more fast ",
-    githubUrl: "https://github.com/ammaar-engineer/RacerEX-F",
-    category: "development",
+    id: "5",
+    title: "QuantaAPI",
+    description: "Create mock API before your backend ready",
+    websiteUrl: "https://example.com",
+    category: "production",
   },
 ];

@@ -10,8 +10,10 @@ const techStack = [
   "MariaDB",
   "Redis",
   "MongoDB",
-  "Docker",
+  "Podman",
   "Linux",
+  "Git",
+  "HonoJS",
 ];
 
 const wikiItems: Wiki[] = [

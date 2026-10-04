@@ -2,7 +2,8 @@ export interface Project {
   id: string;
   title: string;
   description: string;
-  githubUrl: string;
+  githubUrl?: string;
+  websiteUrl?: string;
   category: 'development' | 'production';
 }
 

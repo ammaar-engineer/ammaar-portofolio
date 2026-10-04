@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "motion/react";
 import type { Project } from "@/types";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Globe } from "lucide-react";
 
-export default function ProjectCard({ title, description, githubUrl, index = 0 }: Omit<Project, "id" | "category"> & { index?: number }) {
+export default function ProjectCard({ title, description, githubUrl, websiteUrl, index = 0 }: Omit<Project, "id" | "category"> & { index?: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -20,13 +20,23 @@ export default function ProjectCard({ title, description, githubUrl, index = 0 }
               {description}
             </span>
           </CardDescription>
-          <div className="pt-2">
-            <Button variant="outline" size="sm" className="rounded-full gap-1.5" asChild>
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="size-3" />
-                GitHub
-              </a>
-            </Button>
+          <div className="pt-2 flex flex-wrap gap-2">
+            {githubUrl && (
+              <Button variant="outline" size="sm" className="rounded-full gap-1.5" asChild>
+                <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="size-3" />
+                  GitHub
+                </a>
+              </Button>
+            )}
+            {websiteUrl && (
+              <Button variant="outline" size="sm" className="rounded-full gap-1.5" asChild>
+                <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
+                  <Globe className="size-3" />
+                  Website
+                </a>
+              </Button>
+            )}
           </div>
         </CardHeader>
       </Card>

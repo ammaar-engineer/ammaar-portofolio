@@ -46,6 +46,7 @@ export default function Projects() {
                     title={project.title}
                     description={project.description}
                     githubUrl={project.githubUrl}
+                    websiteUrl={project.websiteUrl}
                     index={index}
                   />
                 ))}
@@ -60,6 +61,7 @@ export default function Projects() {
                     title={project.title}
                     description={project.description}
                     githubUrl={project.githubUrl}
+                    websiteUrl={project.websiteUrl}
                     index={index}
                   />
                 ))}

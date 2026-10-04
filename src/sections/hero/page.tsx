@@ -34,7 +34,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
         >
           <Badge className="rounded-[2px] bg-black text-white text-sm px-4 py-4 font-medium hover:bg-black/90 shadow-md">
-            Backend Developer
+            WEB DEVELOPER & IT ENTHUSASTIC
           </Badge>
         </motion.div>
 
