@@ -3,7 +3,14 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -70,8 +77,19 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-64">
-            <div className="flex flex-col gap-4 pt-8">
+          <SheetContent
+            side="right"
+            className="w-72 max-w-[85vw] gap-0 p-6 data-[side=right]:w-72"
+          >
+            <SheetHeader className="p-0 text-left">
+              <SheetTitle className="text-xl font-bold tracking-tight">
+                MAF
+              </SheetTitle>
+              <SheetDescription className="text-xs text-muted-foreground">
+                Navigate to a section
+              </SheetDescription>
+            </SheetHeader>
+            <nav className="mt-8 flex flex-col gap-1 border-t border-border pt-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -80,12 +98,12 @@ export default function Navbar() {
                     e.preventDefault();
                     handleNavClick(link.href);
                   }}
-                  className="text-lg font-medium transition-colors hover:text-primary"
+                  className="rounded-md px-3 py-2.5 text-base font-medium text-foreground/80 transition-colors hover:bg-muted hover:text-primary"
                 >
                   {link.name}
                 </a>
               ))}
-            </div>
+            </nav>
           </SheetContent>
         </Sheet>
       </div>

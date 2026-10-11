@@ -35,7 +35,7 @@ export const projects: Project[] = [
     id: "5",
     title: "QuantaAPI",
     description: "Create mock API before your backend ready",
-    websiteUrl: "https://example.com",
+    websiteUrl: "https://quanta-api-omega.vercel.app/",
     category: "production",
   },
 ];

@@ -17,8 +17,8 @@ const pixelFont = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Ammaar Dev | Backend Developer",
-  description: "Portfolio of Mochammad Ammmaar Fauzaan, a Backend Developer specializing in Node.js, Express, NestJS, and modern web technologies.",
+  title: "Ammaar Dev | Web developer",
+  description: "Portfolio of Mochammad Ammmaar Fauzaan, a Web developer specializing in Node.js, Express, NestJS, and modern web technologies.",
 };
 
 export default function RootLayout({

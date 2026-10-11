@@ -14,6 +14,7 @@ const techStack = [
   "Linux",
   "Git",
   "HonoJS",
+  "Linux basic",
 ];
 
 const wikiItems: Wiki[] = [
@@ -24,8 +25,8 @@ const wikiItems: Wiki[] = [
   },
   {
     id: "2",
-    title: "Database Indexing",
-    description: "Understanding database indexing strategies for query optimization and performance.",
+    title: "Rate limiting",
+    description: "Strategies for throttling requests to protect APIs from abuse and ensure fair resource usage.",
   },
   {
     id: "3",
@@ -34,8 +35,8 @@ const wikiItems: Wiki[] = [
   },
   {
     id: "4",
-    title: "Caching Strategies",
-    description: "Redis caching patterns and techniques for high-performance applications.",
+    title: "Agent workflow for coding",
+    description: "Best practices for orchestrating AI coding agents to plan, implement, and review changes effectively.",
   },
 ];
 
