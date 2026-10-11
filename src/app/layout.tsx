@@ -41,10 +41,6 @@ export default function RootLayout({
               hoverFillColor='#4c4a4a'
               shape='square' // square, hexagon, circle, triangle
               hoverTrailAmount={0} // number of trailing hovered shapes (0 = no trail)
-              direction="down"
-              hoverColor="#222222"
-              size={40}
-              shape="square"
             />
           </div>
         <TooltipProvider>
